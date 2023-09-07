@@ -7,7 +7,7 @@
 
 <h3 align="left">Connect with me:<br> 
 @Instagram : https://instagram.com/onkar.bhokare18?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D <br>
-@LinkedIn : https://www.linkedin.com/in/onkar-bhokare-0a5686251
+@LinkedIn : https://www.linkedin.com/in/onkar-bhokare-0a5686251 <br>
 @InstaThreads : https://www.threads.net/@onkar.bhokare18</h3>
 <p align="left">
 </p>
