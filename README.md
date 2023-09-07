@@ -3,11 +3,12 @@
 
 - 🌱 I’m currently learning **Java**
 
-- 📫 How to reach me **omkarbhokare666@gmail.com**
+- 📫 How to reach me : **omkarbhokare666@gmail.com**
 
 <h3 align="left">Connect with me:<br> 
 @Instagram : https://instagram.com/onkar.bhokare18?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D <br>
-@LinkedIn : https://www.linkedin.com/in/onkar-bhokare-0a5686251</h3>
+@LinkedIn : https://www.linkedin.com/in/onkar-bhokare-0a5686251
+@InstaThreads : https://www.threads.net/@onkar.bhokare18</h3>
 <p align="left">
 </p>
 
