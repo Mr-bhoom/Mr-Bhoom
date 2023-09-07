@@ -5,7 +5,7 @@
 
 - 📫 How to reach me **omkarbhokare666@gmail.com**
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">Connect with me: https://instagram.com/onkar.bhokare18?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D</h3>
 <p align="left">
 </p>
 
