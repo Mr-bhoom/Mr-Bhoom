@@ -1,0 +1,113 @@
+Cloud Computing 
+Assignment No. 2
+
+//Paravirtualization: KVM with Virt-Manager
+
+//Install KVM on any Linux platform and alongside install 
+
+//virt-manager and run virtualized OS on the KVM through 
+
+//virt-manager.  Give me step by step process and code
+ChatGPT said:
+ChatGPT
+
+//Here’s a step-by-step guide to installing KVM (Kernel-based Virtual Machine) on a Linux platform and using Virt-Manager to run a virtualized OS. This guide assumes you are using Ubuntu or a Debian-based distribution.
+//Step 1: Check System Compatibility for KVM
+
+    //Open the terminal and run:
+
+    egrep -c '(vmx|svm)' /proc/cpuinfo
+
+        If the output is 0, your CPU does not support hardware virtualization.
+        If the output is 1 or more, your system supports it.
+
+    //Verify that virtualization is enabled in the BIOS.
+
+//Step 2: Install KVM and Required Tools
+
+    //Update your system:
+
+sudo apt update && sudo apt upgrade -y
+
+//Install KVM and related packages:
+
+sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager -y
+
+//Verify that the libvirtd service is running:
+
+sudo systemctl status libvirtd
+
+//Add your user to the libvirt group to avoid using sudo:
+
+sudo usermod -aG libvirt $(whoami)
+
+//Restart your system or log out and back in for the group changes to take effect.
+
+ubuntu@VaibhavTYB58:~/Desktop$ sudo virt-manager
+[sudo] password for ubuntu: 
+ubuntu@VaibhavTYB58:~/Desktop$ virt-manager
+ubuntu@VaibhavTYB58:~/Desktop$ 
+
+
+
+
+Exp3
+//wine
+
+ubuntu@VaibhavTYB58:~/Desktop$ sudo apt update && sudo apt upgrade -y
+ubuntu@VaibhavTYB58:~/Desktop$ sudo apt install  -y wine64 wine32
+ubuntu@VaibhavTYB58:~/Desktop$ wine --version
+ubuntu@VaibhavTYB58:~/Desktop$ winecfg
+
+install any windows application(Notepad++) from firefox
+ubuntu@VaibhavTYB58:~/Desktop$ wine ~/.wine/drive_c/Program\ Files/Notepad++/notepad++.exe
+
+DosBOx
+
+ubuntu@VaibhavTYB58:~/Desktop$ sudo apt install -y dosbox
+ubuntu@VaibhavTYB58:~/Desktop$ dosbox --version
+ubuntu@VaibhavTYB58:~/Desktop$ mkdir ~/dosgames
+
+
+mario game download link
+===https://www.dosgames.com/game/mario-and-luigi/#google_vignette
+
+
+
+
+
+
+Experiment 6
+Eavesdropping
+
+https://www.geeksforgeeks.org/working-udp-datagramsockets-java/
+//create seperate server and client run it
+ubuntu@VaibhavTYB58:~$ sudo apt update
+ubuntu@VaibhavTYB58:~$ sudo apt install openjdk-21-jdk
+ubuntu@VaibhavTYB58:~$ java -version
+ubuntu@VaibhavTYB58:~$ cd Downloads
+ubuntu@VaibhavTYB58:~/Downloads$ javac server.java
+ubuntu@VaibhavTYB58:~/Downloads$ java server
+
+ubuntu@VaibhavTYB58:~/Downloads$ javac client.java
+ubuntu@VaibhavTYB58:~/Downloads$ java client
+hello
+komal
+
+third terminal:
+buntu@VaibhavTYB58:~/Downloads$ sudo tcpdump -i any udp port 1234 -X
+[sudo] password for ubuntu: 
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on any, link-type LINUX_SLL (Linux cooked v1), capture size 262144 bytes
+17:56:57.315466 IP manager.52578 > manager.1234: UDP, length 5
+	0x0000:  4500 0021 1796 4000 4011 c2b5 ac10 0430  E..!..@.@......0
+	0x0010:  ac10 0430 cd62 04d2 000d 609f 6865 6c6c  ...0.b....`.hell
+	0x0020:  6f                                       o
+17:58:02.069013 IP manager.52578 > manager.1234: UDP, length 5
+	0x0000:  4500 0021 34a0 4000 4011 a5ab ac10 0430  E..!4.@.@......0
+	0x0010:  ac10 0430 cd62 04d2 000d 609f 6b6f 6d61  ...0.b....`.koma
+	0x0020:  6c                                       l
+
+
+
+
